@@ -24,18 +24,26 @@ img{
 h2{
     color:darkorange;
     text-decoration: underline;
+    text-align: center;
+    
    
 }
 
-header{
+h1{
+
+    font-size: 50px;
+    padding: 1rem;
+}
+
+.barra-nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
     color: darkorange;
-    padding: 2rem;
-    align-items: center;
+   align-items: center;
     text-align: center;
+    gap: 1rem;
     
 }
 
@@ -44,42 +52,57 @@ header{
     
    
 }
-.fondo{
-    background-color: rgba(239, 181, 22, 0.427);
-}
+
 
 header nav ol li a {
     color: darkorange;
     align-items: center;
-    
-    
 }
 
-@media (min-width:480px) {
+header nav ol { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
-    header{
-        flex-direction: start;
-        display: grid;
-        justify-content: space-between;
+@media (min-width: 768px) {
+
+    .barra-nav{
+        
+        
+        flex-direction: row;
         align-items: center;
-      
+        
         
     }
     
 
     header nav ol {
 
-    display:flex;
-    gap: 1rem;
+       flex-direction: row;
+       gap: 1rem;
+       
+       
    
     }
-    
-.search-bar{
 
-    align-items: center;
-    align-self: end;
+   .navegador{
+
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    
+   }
+
+   .buscador{
+    justify-content: end;
+
+   }
+
+    
+
+ 
+ 
       
      
     }
@@ -92,7 +115,7 @@ header nav ol li a {
 
 
 
-}
+
 
 /***----footer-----***/
 
@@ -105,6 +128,7 @@ footer{
     gap: 1rem; 
     background-color: black;
     color: darkorange;
+    padding: 2rem;
 
 
 
@@ -131,7 +155,214 @@ footer nav ol li a{
     color: darkorange;
 }
 
-/*----definicion---*/
+
+
+/***--------------------------------------------------------USOS----------------------------------------------------***/
+
+/*---------NAV-USOS---------*/
+
+.fondo{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   }
+
+.nav-usos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+
+    
+    
+    
+}
+
+
+.gastro{
+    background-image: url(../img/gastronomic.jpg);
+  
+    
+    
+    background-position: center;
+    min-height: 30vh;
+    min-width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+.medic{
+    background-image: url(../img/medici.jpg);
+    
+    
+    
+    background-position: center;
+    min-height: 30vh;
+    min-width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.recrea{
+    background-image:url(../img/recreativo0.jpg) ;
+    min-height: 30vh;
+    min-width: 33vw;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.nav h3{ 
+
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 10px;
+    border-radius: 40%;
+    
+  
+}
+
+/*---------ART-USOS---------*/
+
+.art-usos { 
+
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 15px;
+    background-color: rgb(246, 193, 131);
+    justify-content: center;
+   align-items: center;
+   max-width: 1200PX;
+   border-radius: 10%;
+}
+
+.nom-def{  
+    padding: 0.5rem;
+    font-size: 17px;
+    text-decoration: underline;
+    
+
+
+}
+.nombres{
+        padding: 1rem;
+        font-size: 20px;
+        color: rgb(176, 47, 0);
+        
+        
+    
+}
+
+.art-usos h6 {
+    font-size: 15px;
+    
+
+}
+
+
+.img-usos img{
+    
+    max-width: 40vw;
+    object-fit: cover;
+}
+
+.tit-usos{
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+
+
+}
+
+@media (min-width: 768px) {
+
+.art-usos {
+
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+    
+
+    }
+
+
+
+
+.img-usos{
+
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    min-width: 50px;
+    object-fit: cover;
+    align-items: space-evenly;
+    gap: 1rem;
+    flex-direction: column;
+
+    }
+
+.nav-usos {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    }
+
+    .art-texto{
+        max-width: 300px;
+       
+    }   
+
+
+}
+    
+@media (min-width: 1024px) {
+
+.art-texto{
+    max-width: 500px;
+   
+}   
+.navegador{
+
+    flex-direction: row;
+}
+
+.tit-usos{
+
+    font-size: 50px;
+    
+}
+
+.art-usos img {
+    max-width: 500px;
+}
+}
+
+
+/*----------------------------------------------definicion-------------------------------------------------*/
 
 .portada-fondo{
     background-image: url(../img/introduccion1.jpg) ;
@@ -154,7 +385,7 @@ footer nav ol li a{
 }
 
 
-/*----Definicion articulos---*/
+/*---------------------------Definicion articulos-------------------*/
 
 .barra-nav{
 
@@ -186,204 +417,136 @@ footer nav ol li a{
 }
 
 
-/***------------------------------usos--------------------------------------***/
 
 
-.nav-usos {
-    display: flex;
-    flex-direction: center;
-    background-color: black;
-    padding: 0;
-    gap: 1rem;
-    justify-content: center;
+
+
 
     
-    
-    
-}
 
 
-.gastro{
-    background-image: url(../img/gastronomic.jpg);
-    padding: 0;
-    justify-content: center;
-    object-fit: cover;
-    background-position: center;
-    text-decoration-color: black;
-    
-   
-   
-}
+  
 
-.medic{
-    background-image: url(../img/medici.jpg);
-    padding: 0;
-    justify-content:center;
-    object-fit: cover;
-    background-position: center;
-    text-decoration-color: black;
-    align-items: start;
+
+
+
+
+/***--------------------------------caracteristicas----------------***/
+
+.tit-caract{
     
-   
-}
-.nom-def{  
-    padding: 1rem;
-    font-size: 80%;
+    color:darkorange;
     text-decoration: underline;
-
-
-}
-
-
-.recrea{
-    background-image:url(../img/recreativo0.jpg) ;
-    padding: 0;
-    object-fit: cover;
-    background-position: center;
-    justify-content:center;
-    text-decoration-color: black;
-   
-}
-
-.nav h3{ 
-
-    font-size: 50%;
-    padding: 3rem;
-    color: rgb(190, 69, 69);
-    
-  
-
-
-
-}
-
-
-.art-usos { 
-
-    display:flex;
-    flex-direction: column;
-    text-align: center;
+    font-size: 2.5rem;
     padding: 2rem;
-    gap: 1rem;
-    align-items: start;
-    font-size: 10px;
-    background-color: rgba(239, 181, 22, 0.427);
-   
 }
 
+.art-caract img {
 
-.nombres{
-        padding: 1rem;
-        font-size: 1rem;
-        color: orangered;
-        
-        
-    
-}
-.img-usos img{
-    
-    max-width: 400px;
-}
-
-.tit-usos{
-    padding: 2rem;
+    max-width: 80%;
+    border-radius: 40%;
     align-items: center;
-
-
-
+    
 }
 
-@media (min-width: 768px) {
-
-.art-usos {
-
-    flex-direction: row;
-
-    
-    justify-content: start;
-    text-align: left;
-    
-
-    }
-
-
-}
-
-.img-usos{
+.art-caract{
 
     display: flex;
-    align-items: center;
-    padding: 2rem;
-    min-width: 50px;
-    object-fit: cover;
-    justify-content: center;
-    gap: 1rem;
     flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 193, 131);
+    padding: 1rem;
+    font-size: 25px;
+    
 
-    }
+}
 
-.nav-usos {
 
-    flex-direction: row;
+
+@media (min-width: 768px){
+
+
+    .art-caract img {  
+
+        max-width: 400px; 
+        max-height: 500px;
+
+
+    }  
+    
+.art-caract{
+    border: 4px solid;
+    border-radius: 10%;
+    max-width: 800px;
+    height: 100%;
+    
+    
+}
+
+.tit-caract{
+    background-color: rgb(252, 158, 50);
+    color: rgb(44, 44, 44);
+    width: 100vw;
+
+}
+
+.sec-caract{
+
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding: 2rem;
+    max-width: 1400PX;
+    
 
+}
+}
+
+@media (min-width: 1024px){
+    
+    .sec-caract{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
     }
 
+    .art-caract {
+        grid-column: span 2;
+        
+    }
 
+    .segu{
+        
+        
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
 
-}
-    
-@media (min-width: 1024px) {
-
-.art-usos { 
-  flex-direction: row;
- 
-
-}
-}
-
-
-
-
-
-
-
-
-
-    
-
-
-  
-
-
-
-
-
-/***---caracteristicas---***/
-
-h2{
-    text-align: center;
-}
-
-.parrafo{
-padding: 1rem;
-display: flex;
-flex-direction: column;
-gap: 1rem;
-text-align: center;
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
-
-
+/***----------------------video-------------------------------------------***/
 
 
 .conteiner{
     max-width:  100%; 
    
 }
+
+
+
 .video{
     max-width: 1200px;
 }

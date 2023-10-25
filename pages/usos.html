@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +15,16 @@
      
     
     <header class="barra-nav">
-    <div>
+  
     
         <h1>Mundo Fungi</h1>
 
-    </div>
+  
 
- 
+ <section class="navegador">
         <nav>
             <ol>
-               <li>
-                   <a href="../index.html">Inicio</a> 
-               </li> 
-
+               <li><a href="../index.html">Inicio</a></li> 
                <li><a href="./definicion.html">Definición</a></li>
                <li><a href="./caracteristicas.html">Caracteristicas</a></li>
                <li><a href="./clasificacion.html">Clasificación</a></li>
@@ -37,14 +34,15 @@
            </nav>
 
  
-
+<div class="buscador">
 <form action="http://www.google.com/search" method="get" class="search-bar">
 <input type="text" placeholder="buscar"  name="q">
-<button type="submit"> </button>
+<button type="submit"> </button></form>
 
-     </form>
+</div>
+
+     </section>
   
-
     
     </header>
 
@@ -54,9 +52,9 @@
     
         <ol class="nav-usos">
 
-            <li class="gastro"><a href="#usogas" class="nav"><h3>GASTRONOMICO</a></h3></li>
-            <li class="medic"><a href="#usomed" class="nav"><h3>MEDICINAL</h3></li></a>
-            <li class="recrea"><a href="#usorec" class="nav"><h3>RECREATIVO</h3></li></a>
+            <li class="gastro"><a href="#usogas" class="nav"><h3>GASTRONOMICO</h3></a></li>
+            <li class="medic"><a href="#usomed" class="nav"><h3>MEDICINAL</h3></a></li>
+            <li class="recrea"><a href="#usorec" class="nav"><h3>RECREATIVO</h3></a></li>
 
         </ol>
         
@@ -67,7 +65,7 @@
     <article class="art-usos">
         
     
-        <div>
+        <div class="art-texto">
 
             <a name="usogas" ></a>
 
@@ -81,7 +79,7 @@
 
         <h5 class="nom-def">Champiñones:</h5> 
         
-        <span>Ayudan a la salud de la próstata y el cáncer de mama.
+        <span>Ayudan a la salud de la próstata y el cáncer de mama.</span>
 
         <h5 class="nom-def">Shiitake:</h5>
          
@@ -113,7 +111,7 @@
             
         <h5 class="nom-def">Rebozuelos:</h5>  
         
-        <span>>Refuerzan el metabolismo y tienen un sabor a fruta.</span>
+        <span>Refuerzan el metabolismo y tienen un sabor a fruta.</span>
 
         <h5 class="nom-def">Portobellos:</h5> 
         
@@ -127,9 +125,6 @@
 
         <img src="../img/gastronomico0.jpg">
 
-        <img src="../img/gastronomic.jpg">
-
-       
      </div>
     
     </article>
@@ -138,16 +133,12 @@
 
         <article class="art-usos">
 
-        <div>
+        <div class="art-texto">
             <a name="usomed" ></a>
 
             
 
-            <span>Los hongos medicinales son hongos que se usan como medicamentos. Los hongos se han utilizado por cientos de años, sobre todo en los países asiáticos, para tratar infecciones. Hoy en día, también se emplean para tratar enfermedades pulmonares y el cáncer. En Japón y China, hace más de 30 años que se aprobó el uso de los hongos medicinales como complemento de los tratamientos estándar contra el cáncer. En estos países, los hongos se han utilizado sin peligro por mucho tiempo, solos o en combinación con la radioterapia o la quimioterapia.
-                Los hongos son conocidos por su notable densidad de nutrientes. Entre los ingredientes más importantes se encuentran varias vitaminas, minerales y los llamados polisacáridos, de hecho una sola especie puede tener más de 100 sustancias bioactivas.
-                Los hongos medicinales también tienen propiedades adaptogénicas. Los adaptógenos son sustancias naturales que se encuentran en ciertos hongos y plantas y que tienen un efecto equilibrante y regulador en el cuerpo humano. 
-                Además, contienen ciertos ingredientes que actúan como agentes quelantes, que son capaces de adherirse a los metales pesados y otras sustancias presentes en el organismo para ayudar a su eliminación.
-                </span>
+            <p>Los hongos medicinales son hongos que se usan como medicamentos. Los hongos se han utilizado por cientos de años, sobre todo en los países asiáticos, para tratar infecciones. Hoy en día, también se emplean para tratar enfermedades pulmonares y el cáncer. En Japón y China, hace más de 30 años que se aprobó el uso de los hongos medicinales como complemento de los tratamientos estándar contra el cáncer. En estos países, los hongos se han utilizado sin peligro por mucho tiempo, solos o en combinación con la radioterapia o la quimioterapia. Los hongos son conocidos por su notable densidad de nutrientes. Entre los ingredientes más importantes se encuentran varias vitaminas, minerales y los llamados polisacáridos, de hecho una sola especie puede tener más de 100 sustancias bioactivas. Los hongos medicinales también tienen propiedades adaptogénicas. Los adaptógenos son sustancias naturales que se encuentran en ciertos hongos y plantas y que tienen un efecto equilibrante y regulador en el cuerpo humano.  Además, contienen ciertos ingredientes que actúan como agentes quelantes, que son capaces de adherirse a los metales pesados y otras sustancias presentes en el organismo para ayudar a su eliminación. </p>
                 
             <ol>
                 <li>
@@ -174,14 +165,14 @@
         
         </article>
 
- <h2 class="tit-usos">USO RECREATIVO</h2>
+ <h2 class="tit-usos">USO RECREATIVO<a name="usorec"></a></h2>
 
             <article class="art-usos">
 
 
-    <div>
+    <div class="art-texto">
 
-         <a name="usorec"></a>
+         
 
 
                
@@ -204,11 +195,7 @@
         </ol></div>
             
                 <div class="img-usos">
-        
-               
-                <img src="../img/recreativo2.jpg">
-
-            
+                  
                 <img src="../img/recreativo1.jpg">
                 
              </div>
@@ -235,7 +222,7 @@
             </ol>
         </nav>
 
-        <div><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus ut amet facilis libero quam aspernatur vitae aliquam sapiente maiores aliquid harum, error repellat atque quis architecto, rerum nobis est.</span></div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
 
 
     </footer>
