@@ -1,0 +1,190 @@
+.usos{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+
+&__nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+
+    
+    }
+    
+}
+
+
+.gastro{
+    background-image: url(../img/gastronomic.jpg);
+    background-position: center;
+    min-height: 30vh;
+    min-width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+.medic{
+    background-image: url(../img/medici.jpg);
+    background-position: center;
+    min-height: 30vh;
+    min-width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.recrea{
+    background-image:url(../img/recreativo0.jpg) ;
+    min-height: 30vh;
+    min-width: 33vw;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.nav h3{ 
+
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 10px;
+    border-radius: 40%;
+    
+  
+}
+
+/*------------------------------------------------------ART-USOS-----------------------------------------------------------------------*/
+
+.usos__art { 
+
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 15px;
+    background-color: rgb(246, 193, 131);
+    justify-content: center;
+   align-items: center;
+   max-width: 1200PX;
+   border-radius: 10%;
+}
+
+.nom-def{  
+    padding: 0.5rem;
+    font-size: 17px;
+    text-decoration: underline;
+    
+}
+
+.nombres{
+        padding: 1rem;
+        font-size: 20px;
+        color: rgb(176, 47, 0);
+        
+}
+
+.usos__art h6 {
+    font-size: 15px;
+    
+
+}
+
+
+.img-usos img{
+    
+    max-width: 40vw;
+    object-fit: cover;
+}
+
+.usos__titulo{
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+
+
+}
+
+@media (min-width: 768px) {
+
+.usos__art {
+
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+    
+
+    }
+
+
+
+
+.img-usos{
+
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    min-width: 50px;
+    object-fit: cover;
+    align-items: space-evenly;
+    gap: 1rem;
+    flex-direction: column;
+
+    }
+
+.usos__nav {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    }
+
+    .art-texto{
+        max-width: 300px;
+       
+    }   
+
+
+}
+    
+@media (min-width: 1024px) {
+
+.art-texto{
+    max-width: 500px;
+   
+}   
+.navegador{
+
+    flex-direction: row;
+}
+
+.usos__titulo{
+
+    font-size: 50px;
+    
+}
+
+.usos__art img {
+    max-width: 500px;
+}
+}

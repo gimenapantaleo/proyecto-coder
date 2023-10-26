@@ -1,0 +1,54 @@
+
+/*----------------------------------------------definicion-------------------------------------------------*/
+
+.portada-fondo{
+    background-image: url(../img/introduccion1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 60vh;
+    text-align:  center;
+    color: white ;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.introduccion{
+    background-color: rgba(0, 0, 0, 0.401) ;
+    
+}
+
+
+/*---------------------------Definicion articulos-------------------*/
+
+.barra-nav{
+
+    display:flex;
+    gap: 1rem; 
+    justify-content: space-between;
+    font-size: 100%;
+    padding: 1rem;
+    background-color: black;
+    overflow:auto ;
+
+
+
+}
+
+
+
+
+.def-art{
+
+    padding: 1rem ;
+    text-align: center; 
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+
+}
