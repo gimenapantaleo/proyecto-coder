@@ -1,85 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora la clasificación de los hongos en el reino Fungi. Aprende sobre sus diferentes grupos y características. Mundo Fungi te brinda información detallada sobre hongos.">
+    <meta name="author" content="Mundo Fungi">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Teko:wght@300&display=swap" rel="stylesheet">
-    <title>clasificacion</title>
+
+    <title>Clasificación de Hongos- Mundo Fungi</title>
+
+   
 </head>
 
 <body>
 
-    <header class="barra-nav"> 
-        
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black ">
+            <div class="container">
+              <a class="navbar-brand fs-1 text-warning " href="#">Mundo Fungi</a>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-        <h1>Mundo Fungi</h1>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link  fs-5 text-white " aria-current="" href="../index.html">Inicio</a>
+                  </li>
+                    <a class="nav-link text-white fs-5" href="../pages/definicion.html">Definición</a>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" href="../pages/clasificacion.html">Clasificación</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="../pages/caracteristicas.html">Caracteristicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="../pages/usos.html">Usos</a>
+                      </li>
 
-        <section class="navegador">
 
-        <nav>
-            <ol>
-               
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="./definicion.html">Definicion</a></li>
-               <li><a href="./caracteristicas.html">Caracteristicas</a></li>
-               <li><a href="./clasificacion.html" class="active">Clasificacion</a></li>
-               <li><a href="./usos.html">Usos</a></li>
-            </ol>
-           
-           </nav>
-
-
-
-<div class="buscador">
-<form action="http://www.google.com/search" method="get" class="search-bar">
-<input type="text" placeholder="buscar"  name="q">
-<button type="submit"><img src="./images/search.png">  </button></form>
- 
-</div>    
-
-</section>
-  
-
+                <form class="d-flex justify-content-between" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success text-white" type="submit ">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
 
     <main>
 
         <section class="fondo">
-            
-            <nav class="menu"> 
-                <ol>
 
+            <h2>Clasificación de Hongos</h2>
 
-                    <li><a href="#setas">Setas</a></li>
-                    <li><a href="#levadura">Levadura</a></li>
-                    <li><a href="#moho">Moho</a></li>
-                   
-                </li>
-                </ol>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+              <div class="container ">
+                
+                <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ">
+                    <a class="nav-link active" href="#setas" href="#">Setas</a>
+                    <a class="nav-link active" href="#levadura">Levaduras</a>
+                    <a class="nav-link active" href="#moho">Moho</a>
+                    
+                  </div>
+                </div>
+              </div>
             </nav>
 
-            <ol>
+            <nav class="menu">
 
-                <li><img src="../img/setas.jpg" class="menuimg" alt="setas"></li>
-                <li><img src="../img/levadura.jpg" class="menuimg" alt="levaduras"></li>
-                <li><img src="../img/moho.jpg" class="menuimg" alt="moho"></li>
+                <img src="../img/setas1.jpg" class="menu__img" alt="imagen de setas">
+                <img src="../img/levadura1.jpg" class="menu__img" alt="imagenb de levaduras">
+                <img src="../img/moho1.jpg" class="menu__img" alt="imagen de moho">
 
-            </ol>
+           </nav>
      
 
         <article>
 
-            <a name="setas" ></a>
-            <h2>Setas</h2>
+            <h2 id="setas">Setas</h2>
 
-        <img class="tipos" src="../img/setas2.jpg">
+<div class="clasificacion">
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel quos architecto iure tempora nisi perspiciatis inventore deleniti. Praesentium quo suscipit officiis nobis reiciendis velit! Nostrum quibusdam deserunt expedita ad?</p>
-        
+        <img class="tipos" src="../img/setas0.jpg" alt="imagen de setas">
+
+            <p class="tipos__parrafo">Las setas son hongos que pertenecen al grupo de los basidiomicetos. Se caracterizan por tener un cuerpo fructífero bien desarrollado y visible, conocido como seta, que generalmente se encuentra sobre el suelo o en la madera en descomposición. Estas estructuras reproductoras están compuestas por un sombrero y un tallo.</p>
+
+          </div>
             
         
         
@@ -87,29 +101,30 @@
         
         <article>
 
-            <a name="levadura" ></a>
-            <h2>Levadura</h2>
 
-        <img class="tipos" src="../img/levadura2.jpg">
+            <h2 class="levadura"  id="levadura">Levadura</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel quos architecto iure tempora nisi perspiciatis inventore deleniti. Praesentium quo suscipit officiis nobis reiciendis velit! Nostrum quibusdam deserunt expedita ad?</p>
-        
-            
-        
+            <div class="clasificacion1">
+
+        <img class="tipos" src="../img/levadura0.jpg"  alt="imagen de levadura">
+
+            <p class="tipos__parrafo">Las levaduras son un tipo de hongo microscópico que pertenece al grupo de los ascomicetos. Estos hongos son unicelulares y se caracterizan por su capacidad para fermentar azúcares y producir dióxido de carbono y alcohol como productos finales. Las levaduras son ampliamente utilizadas en la industria alimentaria en la fermentación de alimentos como el pan, la cerveza y el vino.</p>
+          </div>
+          
         
         </article>
 
-      
-
  <article>
 
-            <a name="moho" ></a>
-            <h2>Moho</h2>
 
-        <img class="tipos" src="../img/moho2.jpg">
+            <h2 id="moho">Moho</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel quos architecto iure tempora nisi perspiciatis inventore deleniti. Praesentium quo suscipit officiis nobis reiciendis velit! Nostrum quibusdam deserunt expedita ad?</p>
-        
+            <div class="clasificacion">
+
+        <img class="tipos" src="../img/moho0.jpg"  alt="imagen de moho">
+
+            <p class="tipos__parrafo">Los hongos del moho son un grupo diverso de hongos filamentosos pertenecientes al grupo de los zigomicetos o los ascomicetos. Estos hongos se caracterizan por su capacidad para crecer y colonizar diferentes tipos de sustratos, como alimentos, plantas, madera y tejidos orgánicos en descomposición. El moho puede ser de diferentes colores y texturas, suele aparecer como manchas o puntos en áreas húmedas o con poca ventilación. Algunas especies de moho pueden ser perjudiciales para la salud humana, ya que liberan esporas que pueden causar alergias o problemas respiratorios.</p>
+        </div>
             
         
         
@@ -138,9 +153,12 @@
             </ol>
         </nav>
 
-        <div><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus ut amet facilis libero quam aspernatur vitae aliquam sapiente maiores aliquid harum, error repellat atque quis architecto, rerum nobis est.</span></div>
+        <div><span>Copyright © 2023 Mundo Fungi | Powered by Mundo Fungi</span></div>
 
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

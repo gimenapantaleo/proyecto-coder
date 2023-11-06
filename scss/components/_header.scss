@@ -1,24 +1,13 @@
-h2{
-    color:darkorange;
-    text-decoration: underline;
-    text-align: center;
-    
-   
-}
 
-h1{
 
-    font-size: 50px;
-    padding: 1rem;
-}
 
 .barra-nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: colum;
     justify-content: space-between;
-    background-color: black;
-    color: darkorange;
-   align-items: center;
+    background-color: $color-black;
+    color: $color-naranja;
+    align-items: center;
     text-align: center;
     gap: 1rem;
     
@@ -27,12 +16,11 @@ h1{
 .active{
     text-decoration: underline;
     
-   
 }
 
 
 header nav ol li a {
-    color: darkorange;
+    color: $color-naranja;
     align-items: center;
 }
 
@@ -42,17 +30,9 @@ header nav ol {
     gap: 0.5rem;
 }
 
+
 @media (min-width: 768px) {
 
-    .barra-nav{
-        
-        
-        flex-direction: row;
-        align-items: center;
-        
-        
-    }
-    
 
     header nav ol {
 
@@ -63,36 +43,13 @@ header nav ol {
    
     }
 
-   .navegador{
 
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 3rem;
-    
-   }
 
-   .buscador{
-    justify-content: end;
-
-   }
 
       
      
     }
 
-    /***-------------------------------------video-------------------------------------------------------------------------***/
-
-
-.conteiner{
-    max-width:  100%; 
-   
-}
-
-
-
-.video{
-    max-width: 1200px;
-}
-
+ 
 
 

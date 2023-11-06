@@ -1,7 +1,7 @@
 
 .tit-caract{
     
-    color:darkorange;
+    color:$color-naranja;
     text-decoration: underline;
     font-size: 2.5rem;
     padding: 2rem;
@@ -9,7 +9,7 @@
 
 .art-caract img {
 
-    max-width: 80%;
+    width: 100%;
     border-radius: 40%;
     align-items: center;
     
@@ -23,9 +23,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(246, 193, 131);
+    background-color: $color-claro;
     padding: 1rem;
     font-size: 25px;
+   background: linear-gradient(145deg, #ddae76, #ffcf8c);
+   box-shadow:  7px 7px 29px #e5b37a,
+             -7px -7px 29px #ffcf8c;
+
+
     
 
 }
@@ -37,7 +42,7 @@
 
  .art-caract img {  
 
-        max-width: 100%; 
+        width: 100%; 
         max-height: 100%;
 
 
@@ -53,8 +58,8 @@
 }
 
 .tit-caract{
-    background-color: rgb(252, 158, 50);
-    color: rgb(44, 44, 44);
+    background-color: $color-mostaza;
+    color:$color-transparente;
     width: 100vw;
 
 }
@@ -63,7 +68,7 @@
 
     display: grid ;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(0, 0, 0);
+    background-color: $color-black;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -83,11 +88,11 @@
 
     .art-caract {
         grid-column: span 2;
+       
         
     }
 
     .segu{
-        
         
         grid-column-start: 2;
         grid-column-end: 4;
@@ -96,8 +101,9 @@
     .conteiner{
         display: flex;
         flex-direction: column;
-        background-color: black;
+        background-color: $color-black;
         justify-content: center;
         align-items: center;
     }
+
 }

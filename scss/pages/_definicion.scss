@@ -1,28 +1,50 @@
 
-/*----------------------------------------------definicion-------------------------------------------------*/
+/*----------------------------------------------definicion----------------------------------------------------------------------------*/
 
-.portada-fondo{
+.portada{
     background-image: url(../img/introduccion1.jpg) ;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 60vh;
+   height: 60vh;
+    width: 100%;
     text-align:  center;
-    color: white ;
-    font-size: 2rem;
+    color: $color-white;
     display: flex;
     align-items: center;
 
+&__introduccion{
+   background-color: rgba(0, 0, 0, 0.473);
+    margin: 0 3rem;
+    border-radius: 20%;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 11px;
+
+}
+
 }
 
 
-.introduccion{
-    background-color: rgba(0, 0, 0, 0.401) ;
+.barra-def { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+    background-color: $color-black;
+    padding: 1.5rem;
+    gap: 1rem;
+
+
+}
+
+
+nav ol li a { 
+    color: $color-naranja;
     
+   
 }
 
-
-/*---------------------------Definicion articulos-------------------*/
+/*------------------------------------------------Definicion articulos----------------------------------------------------------------*/
 
 .barra-nav{
 
@@ -30,14 +52,10 @@
     gap: 1rem; 
     justify-content: space-between;
     font-size: 100%;
-    padding: 1rem;
-    background-color: black;
+    background-color: $color-black;
     overflow:auto ;
-
-
-
+   
 }
-
 
 
 
@@ -47,8 +65,91 @@
     text-align: center; 
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: $color-claro;
+
+
+}
+
+.animacion {
+    display: block;
+    opacity: 0;
+    animation: aparecer 3s ease-in forwards;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media (min-width: 768px) {
+    
+
+.barra-nav{ 
+
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    }
+.barra-def {
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    font-size: 20px;
+
+
+}
+.portada__introduccion{
+    font-size: 25px;
+
+}
+
+
+}
+
+
+
+
+@media (min-width: 1024px){
+
+
+.barra-nav{
+
+  flex-direction: row;
+  justify-content: space-around;
+ 
+ 
+ 
+}
+
+.def-art {
+
+    
+   flex-direction: column;
+   font-size: 25px;
+  
+
+&__img{
+    max-width: 40vw;
+    object-fit: cover;
+    object-position: center;
     gap: 1rem;
 
+   }
+
+ }
+ .portada__introduccion{
+
+    font-size: 30px;
+ }
 
 
 }

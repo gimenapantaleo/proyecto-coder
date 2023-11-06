@@ -5,8 +5,8 @@ footer{
     align-items: center;
     text-align: center;
     gap: 1rem; 
-    background-color: black;
-    color: darkorange;
+    background-color: $color-black;
+    color: $color-naranja;
     padding: 2rem;
 
 
@@ -31,5 +31,5 @@ footer nav ol {
 
 footer nav ol li a{
 
-    color: darkorange;
+    color: $color-naranja;
 }
