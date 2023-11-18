@@ -1,44 +1,68 @@
 $color-orange: rgb(176, 47, 0);
-$color-naranja:darkorange;
-$color-black:black;
-$color-white:white ;
+$color-naranja: darkorange;
+$color-black: black;
+$color-white: white;
 $color-claro: rgb(246, 193, 131);
-$color-mostaza:rgb(252, 158, 50);
+$color-mostaza: rgb(252, 158, 50);
 $color-transparente: rgb(44, 44, 44);
 
-$ff-mooli:'Mooli', sans-serif ;
+$ff-mooli: 'Mooli', sans-serif;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $ff-mooli ;
-    
+
 }
 
-ul, ol {
+ul,
+ol {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-h2{
-    color:$color-naranja;
+h2 {
+    color: $color-orange;
     text-decoration: underline;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    background-color: $color-claro;
     text-align: center;
-    
-   
 }
 
-h1{
+@media (min-width: 768px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+h1 {
 
     font-size: 50px;
     padding: 1rem;
+}
+
+body {
+    background-color: $color-claro;
+}
+
+@mixin mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
 }

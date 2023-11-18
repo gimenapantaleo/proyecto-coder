@@ -1,137 +1,108 @@
-h2{
-    color:$color-orange;
-    text-decoration: underline;
-    text-align: center;
-    padding: 1rem;
-   
-}
-
-h1{
-
-    font-size: 50px;
-    padding: 1rem;
-}
-
-.barra-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: $color-black;
-    color: $color-naranja;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    
-}
-
-.active{
-    text-decoration: underline;
-    
-}
-
-
-header nav ol li a {
-    color: $color-naranja;
-    align-items: center;
-}
-
-header nav ol { 
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-
-    }
-.fondo{
-
-    background-color: $color-claro;
-}
- .menu{
-    display: flex;
-    flex-direction: column;
- 
-  
- &__img {
- 
-    max-width: 80%;
-    border-radius: 40%;
-    width: 80%;
-    margin: 0 auto;
-    padding: 0.5rem;
-    
-
-}
-}
-
-
-.tipos{
-
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    
-&__parrafo {
-
-    text-align: center;
-    padding: 1rem;
-    
-
-}
-
-
-}
-
-
-
-@media (min-width: 768px)  {
-
+/*----------NAVEGADOR CON IMAGENES---------*/
 
 .menu {
-
-    flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     gap: 1rem;
-
-&__img{
-    max-width: 30%;
-    padding: 1rem;
-
-}
-
-
-}
-
-.tipos{
-
-    max-width: 40%;
-    padding: 1rem;
-
-}
-
-}
-
-.levadura {
-
-    text-align: end;
-    margin-right: 5rem;
-}
-.clasificacion{
-
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     text-align: center;
-    align-items: center;
 
 
+
+    &__img {
+        border-radius: 40%;
+        width: 16vh;
+        margin: 0 auto;
+        padding: 0.5rem;
+
+    }
 }
 
-.clasificacion1{
+@media (min-width: 768px) {
 
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-    align-items: center;
+    .menu__img {
+        width: 30%;
+        padding: 1rem;
 
+    }
+}
+
+/*--------------TITULOS-------------*/
+
+@media (min-width: 768px) {
+
+    .clas-titulo {
+        text-align: start;
+        padding: 1rem 6rem;
+        border-top: solid 2px black;
+        color: $color-orange;
+
+    }
+
+    .levadura {
+
+        text-align: end;
+        padding: 1rem 6rem;
+        border-top: solid 2px black;
+        color: $color-orange;
+    }
+}
+
+/*------------CLASIFICACION-----------*/
+
+.tipos {
+    width: 100%;
+    margin: 0 auto;
+
+    &__parrafo {
+        text-align: center;
+        padding: 1rem;
+
+    }
+}
+
+.clasificacion {
+    @include mobile
+}
+
+.clasificacion1 {
+    @include mobile
 }
 
 
+@media (min-width: 768px) {
+
+
+    .tipos {
+        max-width: 40%;
+        padding: 0px 1rem;
+
+    }
+
+
+    .clasificacion {
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+
+
+    }
+
+    .clasificacion1 {
+
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        align-items: center;
+
+    }
+}
+
+/*----------------TEXTO-CLASIFICACION-------------*/
+
+@media (min-width: 1024px) {
+    .tipos__parrafo {
+        font-size: 25px;
+    }
+
+}

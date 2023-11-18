@@ -1,278 +1,176 @@
-.usos{
-    background-color: $color-black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-   
+/*---------------Navegador---------------*/
 
-&__nav {
+.usos {
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-right: 32px;
-    margin-top: 40px;
-    
-    
+    margin: 0;
+    padding: 0;
+
+    &__nav {
+
+        font-size: 10px;
+        padding: 10px;
+        color: $color-white;
+        background-color: rgba(0, 0, 0, 0.473);
+        border-radius: 40%;
+
     }
-    
 }
 
-.introduccion{
-
-    font-size: 15px;
-}
-
-
-.gastro{
+.gastro {
     background-image: url(../img/gastronomic.jpg);
     background-position: center;
-    min-height: 30vh;
-    width: 30vw;
+    height: 30vh;
+    width: 32%;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-   
+
+
 }
 
-.medic{
+.medic {
     background-image: url(../img/medici.jpg);
     background-position: center;
-    min-height: 30vh;
-    width: 30vw;
+    height: 30vh;
+    width: 32%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
+
+
 }
 
-.recrea{
-    background-image:url(../img/recreativo0.jpg) ;
-    min-height: 30vh;
-    width: 30vw;
+.recrea {
+    background-image: url(../img/recreativo0.jpg);
+    height: 30vh;
+    width: 32%;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
+
+
 }
 
-.nav h3{ 
+@media (min-width: 1024px) {
 
-    font-size: 10px;
-    padding: 10px;
-    color: $color-white;
-    background-color: rgba(0, 0, 0, 0.473);
-    padding: 10px;
-    border-radius: 40%;
-    
-  
+    .usos__nav {
+        font-size: 20px;
+    }
+
 }
 
-/*------------------------------------------------------ART-USOS-----------------------------------------------------------------------*/
 
-.usos__art { 
+/*-------------GASTRONOMICO-------------*/
 
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
+
+.art {
+
     gap: 1rem;
+    @include mobile;
+    padding: 0 1rem;
     font-size: 15px;
     background-color: $color-claro;
     justify-content: center;
-   align-items: center;
-   max-width: 1000PX;
-   border-radius: 10%;
-}
+    align-items: center;
+    max-width: 1000PX;
+    border-radius: 10%;
 
-.nombres{
+
+    &__definicion {
         padding: 1rem;
         font-size: 20px;
-        color:$color-orange;
-        
 
-
-.nombres__definicion {  
-    padding: 2rem;
-    font-size: 20px;
-    text-decoration: underline;
-    margin-bottom: 1rem;
-   
-   
-    
-}
-}
-.usos__art h6 {
-    font-size: 17px;
-    
-
-}
-
-
-.usos__img img{
-    
-    max-width: 40vw;
-    object-fit: cover;
-}
-
-.usos__titulo{
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-
-
-
-}
-
-@media (min-width: 768px) {
-
-.usos__art {
-
-    flex-direction: row;
-    justify-content: start;
-    text-align: left;
-    
 
     }
 
+    & img {
 
+        height: 150px;
+        object-fit: cover;
 
-.usos__img {
-
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    min-width: 50px;
-    object-fit: cover;
-    align-items: space-evenly;
-    gap: 1rem;
-    flex-direction: column;
 
     }
-
-.usos__nav {
-
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  
-
-    
-    
-
-    }
-
-.usos__texto{
-
-        max-width: 300px;
-    
-
-
-    }   
-
-.texto__definicion{
-
-
-     position: absolute;
-    text-align: end;
-   height: 100vh;
-    width: 70vw;
-    font-size: 19px;
-    color: rgb(21, 98, 57);
-    
-   
-
 
 }
 
 
- .texto-animacion{
-
-    margin-top: 7rem;
-
-
-        animation: fade 2s ease-in-out infinite;
-      }
-    @keyframes fade {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.5;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      
-}
-
-
-
-    
 @media (min-width: 1024px) {
 
-.usos__texto{
-    max-width: 500px;
-   
-}   
-.navegador{
+    .art {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+        gap: 2rem;
 
-    
-    flex-direction: row;
+        &__definicion {
+            grid-column: span 2;
+            font-size: 25px
+        }
+    }
+
+}
+
+/*--------------------MEDICINAL---------------------*/
+
+.articulos {
+    @include mobile;
+
+    padding: 2rem;
+    gap: 1rem;
+
+    &__nombres {
+        text-decoration: underline;
+        font-size: 25px
+    }
+
+    &__img {
+        @include mobile;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
 
 
 
 }
 
-.usos__titulo{
+@media (min-width: 1024px) {
 
-    font-size: 50px;
-    
+    .articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__texto {
+            grid-column: span 2;
+            font-size: 25px;
+        }
+
+        &__definicion {
+            @include mobile;
+            gap: 1rem;
+        }
+
+    }
 }
 
-.usos__art {
+/*----------------RECREATIVO-----------------*/
 
-    font-size: 30px;
-   
+.uso {
+    @include mobile;
+    padding: 2rem;
+    gap: 1rem;
+
+    &__nombres {
+        text-decoration: underline;
+    }
 }
 
-.usos__art img {
-    
-    max-width: 400px;
-}
-.nombres{
+@media (min-width: 1024px) {
 
-    font-size: 30px;
-
-&__definicion{
-        
-    font-size: 30px;
-
-}
-
-&__explicacion{
-
-    font-size: 24px;
-}
-
-}
-
-.texto-animacion{
-
-margin-top: 10rem;
-
-}
-
-
-
-
+    .uso {
+        font-size: 25px;
+    }
 }

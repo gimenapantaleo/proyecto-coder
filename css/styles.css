@@ -5,7 +5,8 @@
   font-family: "Mooli", sans-serif;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -18,55 +19,35 @@ img {
 }
 
 h2 {
-  color: darkorange;
+  color: rgb(176, 47, 0);
   text-decoration: underline;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
+  background-color: rgb(246, 193, 131);
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 h1 {
   font-size: 50px;
   padding: 1rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Mooli", sans-serif;
+body {
+  background-color: rgb(246, 193, 131);
 }
 
-.barra-nav {
-  display: flex;
-  flex-direction: colum;
-  justify-content: space-between;
-  background-color: black;
-  color: darkorange;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
+.conteiner {
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-.active {
-  text-decoration: underline;
-}
-
-header nav ol li a {
-  color: darkorange;
-  align-items: center;
-}
-
-header nav ol {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  header nav ol {
-    flex-direction: row;
-    gap: 1rem;
-  }
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -82,148 +63,107 @@ footer span {
   font-size: 10px;
 }
 
-footer nav ol {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-between;
-}
-
-footer nav ol li a {
+footer a {
   color: darkorange;
 }
 
-.tit-caract {
-  color: darkorange;
-  text-decoration: underline;
-  font-size: 2.5rem;
-  padding: 2rem;
-}
-
-.art-caract img {
-  width: 100%;
-  border-radius: 40%;
-  align-items: center;
-}
-
-.art-caract {
+/*------------SECCION CARACT----------*/
+.sec-caract {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  margin: 2rem;
   text-align: center;
-  background-color: rgb(246, 193, 131);
-  padding: 1rem;
-  font-size: 25px;
-  background: linear-gradient(145deg, #ddae76, #ffcf8c);
-  box-shadow: 7px 7px 29px #e5b37a, -7px -7px 29px #ffcf8c;
 }
 
 @media (min-width: 768px) {
-  .art-caract img {
-    width: 100%;
-    max-height: 100%;
-  }
-  .art-caract {
-    border: 4px solid;
-    border-radius: 10%;
-    max-width: 350px;
-    height: 100%;
-  }
-  .tit-caract {
-    background-color: rgb(252, 158, 50);
-    color: rgb(44, 44, 44);
-    width: 100vw;
-  }
   .sec-caract {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
-    max-width: 1400PX;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 15px;
   }
 }
 @media (min-width: 1024px) {
   .sec-caract {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .art-caract {
-    grid-column: span 2;
-  }
-  .segu {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  .conteiner {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-  }
 }
-h2 {
-  color: rgb(176, 47, 0);
-  text-decoration: underline;
-  text-align: center;
-  padding: 1rem;
+/*----------------TARJETAS-------------*/
+.card-img-top {
+  object-fit: cover;
+  height: 350px;
 }
 
-h1 {
-  font-size: 50px;
-  padding: 1rem;
-}
-
-.barra-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: black;
-  color: darkorange;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-header nav ol li a {
-  color: darkorange;
-  align-items: center;
-}
-
-header nav ol {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.fondo {
+.card-body {
   background-color: rgb(246, 193, 131);
+  height: 100%;
 }
 
+.card {
+  justify-self: center;
+  background: linear-gradient(145deg, #ddae76, #ffcf8c);
+  border: solid 3px;
+  box-shadow: 7px 7px 29px #1a150e, -7px -7px 29px #32291d;
+  animation: aparicion 2s ease-in-out;
+}
+
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.custom-popover {
+  background-color: rgb(246, 193, 131);
+  color: black;
+  box-shadow: rgb(0, 0, 0) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+/*----------NAVEGADOR CON IMAGENES---------*/
 .menu {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .menu__img {
-  max-width: 80%;
   border-radius: 40%;
-  width: 80%;
+  width: 16vh;
   margin: 0 auto;
   padding: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .menu__img {
+    width: 30%;
+    padding: 1rem;
+  }
+}
+/*--------------TITULOS-------------*/
+@media (min-width: 768px) {
+  .clas-titulo {
+    text-align: start;
+    padding: 1rem 6rem;
+    border-top: solid 2px black;
+    color: rgb(176, 47, 0);
+  }
+  .levadura {
+    text-align: end;
+    padding: 1rem 6rem;
+    border-top: solid 2px black;
+    color: rgb(176, 47, 0);
+  }
+}
+/*------------CLASIFICACION-----------*/
 .tipos {
-  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
@@ -232,42 +172,43 @@ header nav ol {
   padding: 1rem;
 }
 
-@media (min-width: 768px) {
-  .menu {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .menu__img {
-    max-width: 30%;
-    padding: 1rem;
-  }
-  .tipos {
-    max-width: 40%;
-    padding: 1rem;
-  }
-}
-.levadura {
-  text-align: end;
-  margin-right: 5rem;
-}
-
 .clasificacion {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  align-items: center;
 }
 
 .clasificacion1 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   text-align: center;
-  align-items: center;
 }
 
-/*----------------------------------------------definicion----------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .tipos {
+    max-width: 40%;
+    padding: 0px 1rem;
+  }
+  .clasificacion {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+  .clasificacion1 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+  }
+}
+/*----------------TEXTO-CLASIFICACION-------------*/
+@media (min-width: 1024px) {
+  .tipos__parrafo {
+    font-size: 25px;
+  }
+}
+/*------------PORTADA----------------*/
 .portada {
   background-image: url(../img/introduccion1.jpg);
   background-size: cover;
@@ -283,35 +224,46 @@ header nav ol {
   background-color: rgba(0, 0, 0, 0.473);
   margin: 0 3rem;
   border-radius: 20%;
-  padding: 2.5rem;
+  padding: 1rem;
   text-align: center;
   font-size: 11px;
 }
 
+@media (min-width: 768px) {
+  .portada__introduccion {
+    font-size: 18px;
+    margin: 0 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada__introduccion {
+    margin: 0 8rem;
+    font-size: 20px;
+  }
+}
+/*----------BARRA NAVEGADOR DEFINICION---------*/
 .barra-def {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: underline;
   background-color: black;
   padding: 1.5rem;
   gap: 1rem;
 }
 
+@media (min-width: 768px) {
+  .barra-def {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+}
 nav ol li a {
   color: darkorange;
 }
 
-/*------------------------------------------------Definicion articulos----------------------------------------------------------------*/
-.barra-nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  font-size: 100%;
-  background-color: black;
-  overflow: auto;
-}
-
+/*-------------Definicion articulos---------------*/
 .def-art {
   padding: 1rem;
   text-align: center;
@@ -323,7 +275,20 @@ nav ol li a {
   background-color: rgb(246, 193, 131);
 }
 
+@media (min-width: 1024px) {
+  .def-art {
+    flex-direction: column;
+    font-size: 25px;
+  }
+  .def-art__img {
+    object-fit: cover;
+    object-position: center;
+    gap: 1rem;
+  }
+}
+/*----------------ANIMACION-------------*/
 .animacion {
+  padding: 0 2rem;
   display: block;
   opacity: 0;
   animation: aparecer 3s ease-in forwards;
@@ -337,65 +302,28 @@ nav ol li a {
     opacity: 1;
   }
 }
-@media (min-width: 768px) {
-  .barra-nav {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .barra-def {
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    font-size: 20px;
-  }
-  .portada__introduccion {
-    font-size: 25px;
-  }
-}
-@media (min-width: 1024px) {
-  .barra-nav {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .def-art {
-    flex-direction: column;
-    font-size: 25px;
-  }
-  .def-art__img {
-    max-width: 40vw;
-    object-fit: cover;
-    object-position: center;
-    gap: 1rem;
-  }
-  .portada__introduccion {
-    font-size: 30px;
-  }
-}
+/*---------------Navegador---------------*/
 .usos {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.usos__nav {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin-right: 32px;
-  margin-top: 40px;
+  margin: 0;
+  padding: 0;
 }
-
-.introduccion {
-  font-size: 15px;
+.usos__nav {
+  font-size: 10px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 40%;
 }
 
 .gastro {
   background-image: url(../img/gastronomic.jpg);
   background-position: center;
-  min-height: 30vh;
-  width: 30vw;
+  height: 30vh;
+  width: 32%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,8 +332,8 @@ nav ol li a {
 .medic {
   background-image: url(../img/medici.jpg);
   background-position: center;
-  min-height: 30vh;
-  width: 30vw;
+  height: 30vh;
+  width: 32%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,30 +341,26 @@ nav ol li a {
 
 .recrea {
   background-image: url(../img/recreativo0.jpg);
-  min-height: 30vh;
-  width: 30vw;
+  height: 30vh;
+  width: 32%;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav h3 {
-  font-size: 10px;
-  padding: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.473);
-  padding: 10px;
-  border-radius: 40%;
+@media (min-width: 1024px) {
+  .usos__nav {
+    font-size: 20px;
+  }
 }
-
-/*------------------------------------------------------ART-USOS-----------------------------------------------------------------------*/
-.usos__art {
+/*-------------GASTRONOMICO-------------*/
+.art {
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2rem;
-  gap: 1rem;
+  padding: 0 1rem;
   font-size: 15px;
   background-color: rgb(246, 193, 131);
   justify-content: center;
@@ -444,183 +368,130 @@ nav ol li a {
   max-width: 1000PX;
   border-radius: 10%;
 }
-
-.nombres {
+.art__definicion {
   padding: 1rem;
   font-size: 20px;
-  color: rgb(176, 47, 0);
 }
-.nombres .nombres__definicion {
-  padding: 2rem;
-  font-size: 20px;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-}
-
-.usos__art h6 {
-  font-size: 17px;
-}
-
-.usos__img img {
-  max-width: 40vw;
+.art img {
+  height: 150px;
   object-fit: cover;
 }
 
-.usos__titulo {
-  padding: 2rem;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-}
-
-@media (min-width: 768px) {
-  .usos__art {
-    flex-direction: row;
-    justify-content: start;
-    text-align: left;
-  }
-  .usos__img {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    min-width: 50px;
-    object-fit: cover;
-    align-items: space-evenly;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  .usos__nav {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .usos__texto {
-    max-width: 300px;
-  }
-  .texto__definicion {
-    position: absolute;
-    text-align: end;
-    height: 100vh;
-    width: 70vw;
-    font-size: 19px;
-    color: rgb(21, 98, 57);
-  }
-  .texto-animacion {
-    margin-top: 7rem;
-    animation: fade 2s ease-in-out infinite;
-  }
-  @keyframes fade {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
 @media (min-width: 1024px) {
-  .usos__texto {
-    max-width: 500px;
+  .art {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    gap: 2rem;
   }
-  .navegador {
-    flex-direction: row;
-  }
-  .usos__titulo {
-    font-size: 50px;
-  }
-  .usos__art {
-    font-size: 30px;
-  }
-  .usos__art img {
-    max-width: 400px;
-  }
-  .nombres {
-    font-size: 30px;
-  }
-  .nombres__definicion {
-    font-size: 30px;
-  }
-  .nombres__explicacion {
-    font-size: 24px;
-  }
-  .texto-animacion {
-    margin-top: 10rem;
+  .art__definicion {
+    grid-column: span 2;
+    font-size: 25px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Mooli", sans-serif;
-}
-
-ul, ol {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-main section h2 {
-  color: rgb(176, 47, 0);
-}
-
-/***-------------------------------------video---------------------------------------------------------------------**/
-.conteiner {
-  max-width: 100%;
-}
-
-.video {
-  max-width: 1200px;
-  padding: 1rem 0;
-}
-
-.inicio__parrafo {
+/*--------------------MEDICINAL---------------------*/
+.articulos {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: rgb(246, 193, 131);
+  padding: 2rem;
+  gap: 1rem;
+}
+.articulos__nombres {
+  text-decoration: underline;
+  font-size: 25px;
+}
+.articulos__img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
-.animacion__texto {
-  font-size: 20px;
+@media (min-width: 1024px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .articulos__texto {
+    grid-column: span 2;
+    font-size: 25px;
+  }
+  .articulos__definicion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+/*----------------RECREATIVO-----------------*/
+.uso {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.uso__nombres {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .uso {
+    font-size: 25px;
+  }
+}
+/*-----------------INDEX-------------------*/
+.index {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem;
+}
+.index__titulo {
+  border-bottom: solid 2px black;
   animation: cambiarColor 3s infinite;
 }
-
 @keyframes cambiarColor {
   0% {
-    color: red;
-  }
-  25% {
-    color: rgb(176, 47, 0);
+    color: rgb(246, 193, 131);
   }
   50% {
-    color: blue;
-  }
-  75% {
-    color: rgb(252, 158, 50);
+    color: rgb(176, 47, 0);
   }
   100% {
-    color: green;
+    color: rgb(252, 158, 50);
   }
 }
-.carousel-item {
-  height: 60vh;
-  object-fit: cover;
+.index__texto {
+  text-align: center;
+  padding: 1rem;
+  font-size: 20px;
+  border: solid 2px black;
+  box-shadow: rgba(0, 0, 0, 0.558) 0px 19px 38px, rgba(0, 0, 0, 0.629) 0px 15px 12px;
+}
+.index__video {
+  height: 40vh;
 }
 
 @media (min-width: 768px) {
-  .inicio {
-    font-size: 30px;
+  .index {
+    gap: 3rem;
   }
-  .animacion__texto {
-    font-size: 35px;
+  .index__video {
+    height: 60vh;
+  }
+  .index__texto {
+    font-size: 25px;
+    margin: 0 20px;
+  }
+}
+/*----------------VIDEO----------------*/
+@media (min-width: 1024px) {
+  .index__video {
+    height: 70vh;
+    max-height: 560px;
   }
 }
 

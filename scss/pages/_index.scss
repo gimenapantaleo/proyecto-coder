@@ -1,101 +1,78 @@
+/*-----------------INDEX-------------------*/
+.index {
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $ff-mooli ;
-    
-}
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem;
 
-ul, ol {
-    list-style-type: none;
-}
+  &__titulo {
 
-a{
-    text-decoration: none;
-}
-
-img{
-    max-width: 100%;
-}
-
-main section h2{
-
-    color: $color-orange;
-}
-
-   /***-------------------------------------video---------------------------------------------------------------------**/
-
-
-   .conteiner{
-    max-width:  100%; 
-   
-}
-
-
-
-.video{
-    max-width: 1200px;
-    padding: 1rem 0;
-}
-
-
-.inicio__parrafo{
-
-    text-align: center;
-    background-color: $color-claro;
-}
-
-.animacion__texto {
-
- font-size: 20px;
-
-   
+    border-bottom: solid 2px black;
     animation: cambiarColor 3s infinite;
-   }
-  
-  @keyframes cambiarColor {
-    0% {
-      color: red;
-    }
 
-    25%{
-        color: $color-orange;
-    }
-    
-    50% {
-      color: blue;
-    }
-
-    75% {
-        color: $color-mostaza ;
-    }
-
-    
-    100% {
-      color: green;
-    }
-}
-
-.carousel-item{
-
-   height: 60vh;
-   object-fit: cover;
- 
-}
-
- @media (min-width: 768px){
-
-.inicio{
-
-    font-size: 30px;
-}
-
-.animacion__texto {
-
-    font-size: 35px;
   }
 
+  @keyframes cambiarColor {
+    0% {
+      color: $color-claro;
+    }
+
+    50% {
+      color: $color-orange;
+    }
+
+    100% {
+      color: $color-mostaza ;
+    }
+  }
+
+  &__texto {
+
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+    border: solid 2px black;
+    box-shadow: rgba(0, 0, 0, 0.558) 0px 19px 38px, rgba(0, 0, 0, 0.629) 0px 15px 12px;
+  }
+
+  &__video {
+
+    height: 40vh;
+
+  }
+
+}
 
 
- }
+@media (min-width: 768px) {
+
+  .index {
+
+    gap: 3rem;
+
+    &__video {
+
+      height: 60vh;
+    }
+
+    &__texto {
+
+      font-size: 25px;
+      margin: 0 20px;
+    }
+  }
+
+}
+
+/*----------------VIDEO----------------*/
+
+@media (min-width: 1024px) {
+
+  .index__video {
+
+    height: 70vh;
+    max-height: 560px;
+  }
+
+}

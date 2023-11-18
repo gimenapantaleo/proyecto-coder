@@ -1,148 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora el fascinante mundo de los hongos con Mundo Fungi. Descubre información sobre los beneficios, clasificación y usos de los hongos.">
-    <meta name="author" content="Mundo Fungi - Gimena Pantaleo">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Teko:wght@300&display=swap" rel="stylesheet">
 
-    <title>Mundo Fungi - Tu fuente de Informacion sobre Hongos</title>
+<head>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/hongologo.jpg">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explora el fascinante mundo de los hongos con Mundo Fungi. Descubre información sobre los beneficios, clasificación y usos de los hongos.">
+  <meta name="author" content="Mundo Fungi - Gimena Pantaleo">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+  <title>Mundo Fungi - Tu fuente de Informacion sobre Hongos</title>
 
 </head>
+
 <body>
 
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black ">
+      <div class="container">
+        <a class="navbar-brand fs-1 text-warning " href="./index.html">Mundo Fungi</a>
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <header class="navbar navbar-expand-lg bg-black ">
-            <div class="container">
-              <a class="navbar-brand fs-1 text-warning " href="#">Mundo Fungi</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="" href="index.html">Inicio</a>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-5 " aria-current="" href="index.html">Inicio</a>
-
-                  </li>
-                    <a class="nav-link  text-white fs-5" href="./pages/definicion.html">Definición</a>
-                    <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="./pages/clasificacion.html">Clasificación</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="./pages/caracteristicas.html">Caracteristicas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="./pages/usos.html">Usos</a>
-                      </li>
-                      
-
-
-                <form class="d-flex justify-content-between" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success text-white" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-        </header>
-   
-
-    <main class="fondo">
-      
-        <section class="inicio">
+            </li>
+            <a class="nav-link  text-white" href="./pages/definicion.html">Definición</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pages/clasificacion.html">Clasificación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pages/caracteristicas.html">Caracteristicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pages/usos.html">Usos</a>
+            </li>
+          </ul>
 
 
-       <h2 class="animacion__texto ">Hongos habitantes de otro reino</h2>
 
-       <p class="inicio__parrafo">Te explicamos qué es el Reino Fungi y cuáles son sus características principales. 
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-white" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        Además, qué tipos de hongos existen y para qué se utilizan.</p>
+  <main class="conteiner">
 
+
+    <section class="index">
+
+      <h2 class="index__titulo">Hongos habitantes de otro reino</h2>
+
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Hongo1.jpg" class="d-block w-100" alt="imagen de hongos azules en un tronco- Mundo Fungi">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Hongo2.jpg" class="d-block w-100" alt="imagen de hongo amapola naranja">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Hongo6.jpg" class="d-block w-100"
+              alt="imagen de hongos pequeños con forma de paraguas llamado Mycena pura">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Hongo4.jpg" class="d-block w-100" alt="imagen de hongo bebe celeste">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Hongo8.jpg" class="d-block w-100" alt="imagen de hongo llamado shiitake">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/hongo14.jpg" class="d-block w-100"
+              alt="imagen de hongo violeta llamado Cortinarius violaceus">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p class="index__texto">Sumérgete en el Reino Fungi, explorando sus características, desde microscópicas
+        levaduras hasta majestuosos basidiomicetos. Descubre cómo estos hongos desempeñan roles cruciales en ecología y
+        aplicaciones variadas, desde alimentos hasta medicamentos.</p>
+
+      <div class="index__video">
+
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4_Yoo3pG-ms?si=PRgo-si8ibeXV9vp"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+
+      </div>
     </section>
+  </main>
 
-<section>
+  <footer>
 
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/Hongo1.jpg" class="d-block w-100" alt="imagen de hongos azules en un tronco- Mundo Fungi">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/Hongo2.jpg" class="d-block w-100" alt="imagen de hongo amapola naranja">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/Hongo6.jpg" class="d-block w-100" alt="imagen de hongos pequeños con forma de paraguas llamado Mycena pura">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/Hongo4.jpg" class="d-block w-100" alt="imagen de hongo bebe celeste">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/Hongo8.jpg" class="d-block w-100" alt="imagen de hongo llamado shiitake">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/hongo14.jpg" class="d-block w-100" alt="imagen de hongo violeta llamado Cortinarius violaceus">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    <h1>Mundo fungi</h1>
 
-</section>
+    <a href="./index.html">Volver al inicio</a>
 
+    <span>Copyright © 2023 Mundo Fungi | Designed by Gimena Pantaleo</span>
 
-<div class="video"> 
+  </footer>
 
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/4_Yoo3pG-ms?si=PRgo-si8ibeXV9vp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 
-    </main>
-
-    <footer>
-
-        <h1>Mundo fungi</h1>
-
-        <nav>
-            <ol>
-
-<li><a href="./pages/nuestrosproductos.html">Nuestros productos</a></li>
-
-<li><a href="./pages/escribinos.html">Escribinos</a></li>
-
-<li><a href="./index.html">Inicio</a></li>
-
-
-
-            </ol>
-        </nav>
-
-        <div><span>Copyright © 2023 Mundo Fungi | Powered by Mundo Fungi</span></div>
-
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
+
 </html>
